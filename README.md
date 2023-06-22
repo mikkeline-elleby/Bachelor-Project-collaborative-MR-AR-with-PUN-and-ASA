@@ -20,7 +20,7 @@ For step 20: Click the No Function drop-down and then select AnchorModuleScript 
 And for step 24: Click the No Function drop-down and then select AnchorModuleScript > DeleteAzureAnchor (GameObject).
 -	I added DeleteAzureAnchor ()
 
-And not correct in tutoiral :
+And not correct in tutorial :
 ![image](https://github.com/mikkeline-elleby/Bachelor-Project-collaborative-MR-AR-with-PUN-and-ASA/assets/83402800/96bae0c9-dd77-41c2-8a9e-cef14cc7ba77)
 
 
