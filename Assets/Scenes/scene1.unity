@@ -284,6 +284,12 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5627024837394778460, guid: 4b8cf9b017b6e044589323100e7bb98c, type: 3}
+      propertyPath: m_Text
+      value: 'Bachelor Project Mikkeline
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 5628053679835281178, guid: 4b8cf9b017b6e044589323100e7bb98c, type: 3}
       propertyPath: m_Text
       value: "USER A: \n  1. Move the cube to desired postion\n  2. Start Azure Session\n 

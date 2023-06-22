@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: spatial-anchors-test-2
+  productName: Bachelor Project Mikkeline
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -628,7 +628,7 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: spatial-anchors-test-2
+  metroPackageName: bachelor
   metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
@@ -637,7 +637,7 @@ PlayerSettings:
   metroCertificateNotAfter: 8061cfae978bda01
   metroApplicationDescription: Template_3D
   wsaImages: {}
-  metroTileShortName: spatial-anchors-test-2
+  metroTileShortName: Bachelor Project Mikkeline
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
