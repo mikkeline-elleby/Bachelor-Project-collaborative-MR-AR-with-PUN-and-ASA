@@ -1158,15 +1158,15 @@ PrefabInstance:
       objectReference: {fileID: 1281704048}
     - target: {fileID: 2053986285137871049, guid: eee6a024b4a153e48b88665b46a6c40a, type: 3}
       propertyPath: spatialAnchorsAccountId
-      value: 526da707-259d-4045-a2e2-75f6d7b44761
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2053986285137871049, guid: eee6a024b4a153e48b88665b46a6c40a, type: 3}
       propertyPath: spatialAnchorsAccountKey
-      value: bWPvBotGwwVeOfb/9lvQERu0WMqHNyAcLMejKNwMAVk=
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2053986285137871049, guid: eee6a024b4a153e48b88665b46a6c40a, type: 3}
       propertyPath: spatialAnchorsAccountDomain
-      value: northeurope.mixedreality.azure.com
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5735529180825636083, guid: eee6a024b4a153e48b88665b46a6c40a, type: 3}
       propertyPath: publicSharingPin
