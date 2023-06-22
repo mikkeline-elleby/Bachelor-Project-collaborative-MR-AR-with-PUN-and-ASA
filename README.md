@@ -1,7 +1,9 @@
 # Bachelor-Project-collaborative-MR-AR-with-PUN-and-ASA
 
 ##Version:
+
 *Azure Spatial Anchors SDK Core
+
 **Version 2.13.3
 com.microsoft.azure.spatial-anchors-sdk.core
 
