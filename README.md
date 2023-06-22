@@ -4,6 +4,12 @@ This work explores the concepts of multi-user capabilities in Microsoft Hololens
 
 The code for the final implementation and Bachelor report can be found on this repository.
 
+# Videos: 
+
+Implementation: https://www.youtube.com/watch?v=YWDDEXeGmyg
+
+Evaluation: https://www.youtube.com/watch?v=55lS9Eusrwg&t=125s
+
 # Tutorials used: 
 
 This implementation uses different components from the tutorial series from Microsoft MRTK: 
