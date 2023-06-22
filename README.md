@@ -13,10 +13,13 @@ This implementation uses different components from the tutorial series from Micr
 ### Tutorial for implementing the Table Anchor (as the version in the multi-user capabilites didn't work): https://learn.microsoft.com/en-us/training/modules/azure-spatial-anchors-tutorials/
 
 Note in this tutorial : 
+
 For step 20: Click the No Function drop-down and then select AnchorModuleScript > FindAzureAnchor (GameObject).
 -	There was only FindAzureAnchor (string) – so I added this
+
 And for step 24: Click the No Function drop-down and then select AnchorModuleScript > DeleteAzureAnchor (GameObject).
 -	I added DeleteAzureAnchor ()
+
 And not correct in tutoiral :
 ![image](https://github.com/mikkeline-elleby/Bachelor-Project-collaborative-MR-AR-with-PUN-and-ASA/assets/83402800/96bae0c9-dd77-41c2-8a9e-cef14cc7ba77)
 
