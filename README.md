@@ -2,7 +2,7 @@
 
 This work explores the concepts of multi-user capabilities in Microsoft Hololens devices to fill a significant gap in the literature by addressing and empirically measuring the limitations and feasibility of a collaborative solution in MR, with additional considerations for LVR. A comprehensive analysis of technical solutions for implementing collaborative features was conducted, identifying Microsoft Shared Experiences as the most suitable solution. A proof-of-concept implementation utilizing the PUN server for graphics synchronization and an Azure Spatial Anchor for a common coordinate system was developed. An experimental design and evaluation was carried out to asses the limitations and feasibility of the implementation. In this context, we have focused on the position of a virtual object shared between two users, and compared the robustness of its position. Results showed accurate recognition of the object's position while highlighting challenges related to the shared coordinate system and displaying correct depths. This study shows promising potential for collaborative application in MR.
 
-The code for the final implementation and Bachelor report can be found on the reposity.
+The code for the final implementation and Bachelor report can be found on this repository.
 
 # Tutorials used: 
 
