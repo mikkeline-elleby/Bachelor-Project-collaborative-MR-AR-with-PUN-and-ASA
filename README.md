@@ -1,5 +1,107 @@
 # Bachelor-Project-collaborative-MR-AR-with-PUN-and-ASA
 
+Great, now that we have a sample of the data, we can proceed with building the model. Let's break it down step by step.
+
+### Steps to Build the Model
+
+1. **Load the Data**:
+   Since we can't directly read from the image, I'll assume the data is loaded into a DataFrame named `df_train`.
+
+2. **Data Preprocessing**:
+    - Handle missing values.
+    - Normalize/standardize features if necessary.
+    - Split data into features and target variable.
+
+3. **Model Training**:
+    - Use a model suitable for binary classification.
+    - Validate the model to avoid overfitting.
+
+4. **Model Evaluation on Test Set**:
+    - Once you receive the test set, apply the same preprocessing steps and evaluate the model.
+
+Here's the Python code to implement these steps:
+
+### Step 1: Load the Data
+
+Assuming the data is already loaded into `df_train`.
+
+### Step 2: Data Preprocessing
+
+```python
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
+
+# Load the data (mock code as we cannot directly read from the image)
+df_train = pd.read_csv('/mnt/data/QSI_training_dataset.csv')
+
+# Separate features and target
+X = df_train.drop('DEFAULT', axis=1)
+y = df_train['DEFAULT']
+
+# Handle missing values
+imputer = SimpleImputer(strategy='mean')
+X_imputed = imputer.fit_transform(X)
+
+# Standardize features
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X_imputed)
+
+# Split data into training and validation sets to avoid overfitting
+X_train, X_val, y_train, y_val = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+```
+
+### Step 3: Model Training
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import roc_auc_score
+
+# Initialize the model
+model = RandomForestClassifier(random_state=42, n_estimators=100)
+
+# Train the model
+model.fit(X_train, y_train)
+
+# Validate the model
+y_val_pred = model.predict_proba(X_val)[:, 1]
+val_auc = roc_auc_score(y_val, y_val_pred)
+print(f'Validation AUROC: {val_auc:.4f}')
+```
+
+### Step 4: Model Evaluation on Test Set
+
+Once you receive the test set, use the following steps:
+
+```python
+# Load the test data
+df_test = pd.read_csv('/path/to/QSI_IRB_Introduction_TestSample.csv')
+
+# Preprocess the test data
+X_test = df_test.drop('DEFAULT', axis=1)  # Assuming the test set includes the 'DEFAULT' column
+y_test = df_test['DEFAULT']
+
+X_test_imputed = imputer.transform(X_test)
+X_test_scaled = scaler.transform(X_test_imputed)
+
+# Predict and evaluate on the test set
+y_test_pred = model.predict_proba(X_test_scaled)[:, 1]
+test_auc = roc_auc_score(y_test, y_test_pred)
+print(f'Test AUROC: {test_auc:.4f}')
+```
+
+### Summary
+
+1. **Load the training data** and preprocess it (handle missing values, standardize features).
+2. **Split** the data into training and validation sets to prevent overfitting.
+3. **Train** a model using a classifier suitable for binary classification.
+4. **Evaluate** the model using the validation set and calculate the AUROC.
+5. **Preprocess the test data** in the same way as the training data when you receive it.
+6. **Evaluate** the model on the test set and report the AUROC.
+
+If you need any more help or have any questions, feel free to ask!
+
 This work explores the concepts of multi-user capabilities in Microsoft Hololens devices to fill a significant gap in the literature by addressing and empirically measuring the limitations and feasibility of a collaborative solution in MR, with additional considerations for LVR. A comprehensive analysis of technical solutions for implementing collaborative features was conducted, identifying Microsoft Shared Experiences as the most suitable solution. A proof-of-concept implementation utilizing the PUN server for graphics synchronization and an Azure Spatial Anchor for a common coordinate system was developed. An experimental design and evaluation was carried out to asses the limitations and feasibility of the implementation. In this context, we have focused on the position of a virtual object shared between two users, and compared the robustness of its position. Results showed accurate recognition of the object's position while highlighting challenges related to the shared coordinate system and displaying correct depths. This study shows promising potential for collaborative application in MR.
 
 The code for the final implementation and Bachelor report can be found on this repository.
